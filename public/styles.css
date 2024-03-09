@@ -108,9 +108,9 @@ header{
 }
 
 #uploadBox img {
-  max-width: 80%;
-  max-height: 80%;
-  border-radius: 5px;
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 3px;
 
 }
 
@@ -129,7 +129,13 @@ header{
   text-align: justify;
   padding-top: 50px;
   font-size: 1.3rem;
-  text-transform: uppercase;
+  text-transform: capitalize;
+  font-family: "Teko", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  letter-spacing: 2.2px;
+  
 }
 .navbar {
   background:   linear-gradient(to right ,#00072b,rgba(133, 133, 176, 0.5),#00072b)  !important; /* Make the navbar background transparent */
@@ -199,7 +205,8 @@ header{
   .upload-label {
     display: block;
     width: 230px; /* Adjust size as needed */
-    height: 230px; /* Adjust size as needed */
+    height: 230px; /* Ad
+    just size as needed */
   }
   #predictButton{
     height: 2rem;
