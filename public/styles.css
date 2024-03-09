@@ -222,3 +222,16 @@ header{
   }
 
 }
+.fade-out {
+  opacity: 1;
+  transition: 1s;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  z-index: 9999; /* Adjust the z-index to make it appear over other content */
+}
+
+.fade-out.fade {
+  opacity: 0;
+}
