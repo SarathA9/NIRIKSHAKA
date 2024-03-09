@@ -232,9 +232,16 @@ header{
 .upload-input {
   display: none;
 }
+.ResultBox{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
 #result{
   color: #fff;
-  text-align: center;
+  text-align: justify;
   padding-top: 50px;
   font-size: 1.3rem;
   text-transform: uppercase;
@@ -286,6 +293,7 @@ header{
 #predictButton {
   position: relative;
 }
+
 
 @media only screen and (max-width: 767px) {
   header img{
