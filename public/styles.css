@@ -1,9 +1,8 @@
 body{
   margin: 0;
   padding: 0;
-  background: #00072b;  
+  background: #010411;  
   color: #fff;
-
 }
 header{
   display: flex;
@@ -43,6 +42,7 @@ header img{
 
 body{
     font-family: 'Exo', sans-serif;
+
     
 }
 .context {
@@ -58,7 +58,6 @@ body{
     color: #2fff00;
     font-size: 50px;
 }
-
 #home h1{
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 4.5rem;
@@ -138,7 +137,7 @@ header{
   
 }
 .navbar {
-  background:   linear-gradient(to right ,#00072b,rgba(133, 133, 176, 0.5),#00072b)  !important; /* Make the navbar background transparent */
+  background:   linear-gradient(to right ,#010411,rgba(133, 133, 176, 0.3),#010411)  !important; /* Make the navbar background transparent */
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 }
