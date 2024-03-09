@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nirikshaka</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="Images/Nirikshaka-logo (2).png" alt="Logo" id="logo"></a>
+                <button class="navbar-toggler bg-light" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon bg-light"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">Home</a>
+                        </li>   
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <!-- <li><button id="theme-toggle">Toggle Theme</button> -->
+                        </li>
+                    </ul> 
+                </div>  
+            </div>         
+        </nav>
+    </header>   
+  
+    <div class="context">        
+        <section id="home" class="home-section">
+            <div class="container">
+                <h1>Object-Model <span id="detector">Detector</span></h1>
+                <label for="uploadInput" class="upload-label" id="dropArea">
+                    <div id="uploadBox">
+                        <img id="defaultImage" src="Images/Nirikshaka__1_-removebg-preview (1).png" alt="Upload icon">
+                        <!-- <span>Upload your image here</span> -->
+                    </div>
+                    <input type="file" id="fileInput" style="display: none;">
+                </label>
+                <input type="file" id="uploadInput" accept="image/*" class="upload-input">
+                <button id="predictButton" class="btn btn-primary d-block mx-auto" onclick="predict()">
+                    <span id="buttonText">Predict</span>
+                    <div id="loadingSpinner" class="spinner-border spinner-border-sm text-light ml-2 d-none" role="status">
+                      <span class="sr-only">Loading...</span>
+                    </div>
+                  </button>
+            </div>
+            <div id="result"></div>
+        </section>
+    </div>
+
+    <div class="area">
+        <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>    
+    </div>
+
+    <!-- Other sections (About, Services, Contact) go here -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet"></script>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
