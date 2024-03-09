@@ -90,3 +90,33 @@ document.getElementById('uploadInput').addEventListener('change', function(event
       reader.readAsDataURL(file);
   }
 }); 
+
+//Image uploaded animation
+// Add event listener to file input element
+document.getElementById('uploadInput').addEventListener('change', function(event) {
+  const file = event.target.files[0]; // Get the selected file
+  const defaultImage = document.getElementById('defaultImage');
+
+  // Check if a file was selected and it's an image
+  if (file && file.type.startsWith('image/')) {
+      const reader = new FileReader();
+      
+      // Read the file content as a data URL
+      reader.onload = function(e) {
+          defaultImage.src = e.target.result; // Set the data URL as source for defaultImage
+          
+          // Show upload status alert
+          const uploadStatus = document.getElementById('uploadStatus');
+          uploadStatus.style.display = 'block';
+          setTimeout(function() {
+              uploadStatus.classList.add('fade');
+              setTimeout(function() {
+                  uploadStatus.style.display = 'none';
+                  uploadStatus.classList.remove('fade');
+              }, 1000); // Hide the alert after fade out transition ends
+          }, 1000); // Hide the alert after 3 seconds
+      };
+
+      reader.readAsDataURL(file);
+  }
+});
