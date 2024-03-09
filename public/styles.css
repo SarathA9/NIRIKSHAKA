@@ -23,13 +23,12 @@ nav ul li{
 
 }
 nav a{
-  font-size: 1.2rem;
   padding: 30px;
   text-decoration: none;
   transition: .5s;
 }
 header img{
-  height: 100px;
+  height: 50px;
 }
 
 @import url('https://fonts.googleapis.com/css?family=Exo:400,700');
@@ -62,7 +61,7 @@ body{
     background: #00072b;  
     background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
     width: 100%;
-    height:100vh;
+    height:120vh;
 }
 
 .circles{
@@ -248,7 +247,7 @@ header{
 
 .navbar-light .navbar-nav .nav-link {
   color: rgba(255, 255, 255, 0.8); /* Change the color of navbar links */
-  font-size: 1.5rem;
+  font-size: 1rem;
   transition: .5s;
 }
 .navbar-light .navbar-nav .nav-link:hover{
@@ -257,6 +256,22 @@ header{
 .navbar-light .navbar-toggler-icon {
   border: #fff;
 }
+
+/* Change the background color of the menu icon */
+.navbar-toggler-icon {
+  background-color: transparent;
+}
+
+/* Change the color of the lines */
+.navbar-toggler-icon span {
+  background-color: red; /* Change to your desired color */
+}
+
+/* Change the color of the second line (middle line) */
+.navbar-toggler-icon span::after {
+  background-color: blue; /* Change to your desired color */
+}
+
 #predictButton{
   margin-top: 20px;
   height: 3rem;
@@ -297,18 +312,4 @@ header{
     font-size: .8rem;
   }
 
-}
-/* Change the background color of the menu icon */
-.navbar-toggler-icon {
-  background-color: transparent;
-}
-
-/* Change the color of the lines */
-.navbar-toggler-icon span {
-  background-color: red; /* Change to your desired color */
-}
-
-/* Change the color of the second line (middle line) */
-.navbar-toggler-icon span::after {
-  background-color: blue; /* Change to your desired color */
 }
