@@ -45,20 +45,9 @@ body{
 
     
 }
-.context {
-    width: 100%;
-    position: absolute;
-    overflow-x: hidden;  
-    padding-top: 50px;
 
-}
-
-.context h1{
-    text-align: center;
-    color: #2fff00;
-    font-size: 50px;
-}
 #home h1{
+  text-align: center;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 4.5rem;
   text-transform: uppercase;
@@ -71,6 +60,7 @@ body{
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
+  padding-top: 50px;
 }
 #detector{
   color: #fff;
@@ -216,8 +206,9 @@ header{
   #result{
     font-size: .8rem;
   }
-  .context{
-    padding-top: 50px;
+  .navbar-light .navbar-nav .nav-link {
+    font-size: .8rem;
+    text-align: justify;
   }
 
 }
@@ -262,4 +253,7 @@ footer ul a{
 #Nirikshaka-text{
   font-size: 1.7rem;
   font-weight: 600;
+}
+#follow-us a{
+  color: #fff;
 }
