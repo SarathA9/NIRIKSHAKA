@@ -31,6 +31,9 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#about">About</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
                         <!-- <li><button id="theme-toggle">Toggle Theme</button> -->
                         </li>
                     </ul> 
@@ -41,8 +44,9 @@
     <div id="uploadStatus" class="alert alert-success text-center fade-out" role="alert" style="display: none;">
         Image uploaded successfully!
     </div>
-    <div class="context">     
-        <section id="home" class="home-section">
+    
+    
+    <section id="home" class="home-section">
             <div class="container">
                 <h1>निरीक्षक<span id="detector"> is an object detector model.</span></h1>
                 <label for="uploadInput" class="upload-label" id="dropArea">
@@ -65,26 +69,27 @@
             </div>
         </section>
 
-        <footer class="footer bg-dark text-light">
-            <div class="container">
+        <footer id="contact"  class="footer bg-dark text-light">
+            <div  class="container">
                 <div class="row">
                     <div class="col-md-4">
                         <h5>About <span id="Nirikshaka-text">Nirikshaka</span></h5>
-                        <p>Nirikshaka, powered by TensorFlow.js and MobileNet, is your go-to tool for object detection using machine learning. Our mission is to make cutting-edge AI accessible to everyone, simplifying complex tasks and enhancing user experiences.</p>
+                        <p>Nirikshaka, powered by TensorFlow.js and MobileNet, is your go-to tool for object detection using machine learning. Nirikshaka detects objects using machine learning and provides accurate predictions based on the analyzed data.</p>
                     </div>
                     <div class="col-md-4">
                         <h5>Quick Links</h5>
                         <ul class="list-unstyled">
-                            <li><a href="#" class="text-light">Home</a></li>
-                            <li><a href="#" class="text-light">About</a></li>
+                            <li><a href="#home" class="text-light">Home</a></li>
+                            <li><a href="#about" class="text-light">About</a></li>
+                            <li><a href="#contact" class="text-light">Contact</a></li>
                         </ul>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4" id="follow-us">
                         <h5>Follow Us</h5>
                         <ul class="list-inline">
-                            <li class="list-inline-item"><a href="#" class="text-light"><i class="fab fa-instagram"></i></a></li>
-                            <li class="list-inline-item"><a href="#" class="text-light"><i class="fab fa-linkedin"></i></a></li>
-                            <li class="list-inline-item"><a href="#" class="text-light"><i class="fab fa-github"></i></a></li>
+                            <li class="list-inline-item"><a href="https://www.instagram.com/_sarath01/" target="_blank" class="social-icon" ><i class="fab fa-instagram "></i></a></li>
+                            <li class="list-inline-item"><a href="https://www.linkedin.com/in/sarath-adukkadukkam" target="_blank" class="social-icon" ><i class="fab fa-linkedin-in"></i></a></li>
+                            <li class="list-inline-item"><a href="https://github.com/saratha9" target="_blank" class="social-icon" ><i class="fab fa-github"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -95,9 +100,6 @@
                 </div>
             </div>
         </footer>
-        
-</div>
-
     
 
     <!-- Other sections (About, Services, Contact) go here -->
