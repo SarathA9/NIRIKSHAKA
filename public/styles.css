@@ -4,6 +4,9 @@ body{
   background: #010411;  
   color: #fff;
 }
+html{
+  scroll-behaviour: smooth;
+}
 header{
   display: flex;
   align-items: center;
