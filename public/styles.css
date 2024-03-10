@@ -5,7 +5,7 @@ body{
   color: #fff;
 }
 html{
-  scroll-behaviour: smooth;
+  scroll-behavior: smooth;
 }
 header{
   display: flex;
@@ -130,7 +130,7 @@ header{
   
 }
 .navbar {
-  background:   linear-gradient(to right ,#010411,rgba(133, 133, 176, 0.3),#010411)  !important; /* Make the navbar background transparent */
+  background:   linear-gradient(to right ,rgb(52,58,64),rgba(143, 143, 157, 0.3),rgb(52,58,64))  !important; /* Make the navbar background transparent */
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 }
