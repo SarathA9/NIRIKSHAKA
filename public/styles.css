@@ -82,8 +82,13 @@ header{
   width: 350px; /* Adjust size as needed */
   height: 350px; /* Adjust size as needed */
   margin: 0 auto;
+  border-radius: 5px;
   text-align: center;
   color: rgba(255, 255, 255, 0.8);
+  transition: 0.7s; 
+}
+.upload-label:hover{
+  background-color: rgb(255, 255, 255);
 }
 
 #uploadBox {
@@ -109,6 +114,38 @@ header{
 .upload-input {
   display: none;
 }
+@keyframes bloom {
+  0% {
+    border-color: #ccc;
+  }
+  25% {
+    border-color: #ffcc00; /* Change to your desired blooming color */
+  }
+  50% {
+    border-color: yellow; /* Change to your desired blooming color */
+  }
+  75% {
+    border-color: #00ff00; /* Change to your desired blooming color */
+  }
+  100% {
+    border-color: #ccc;
+  }
+}
+
+#uploadBox {
+  border: 1.5px dashed #ccc;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 5px;
+  margin-top: 50px;
+  animation: bloom 6s infinite linear; /* Adjust duration and timing as needed */
+}
+
 .ResultBox{
   width: 100%;
   display: flex;
