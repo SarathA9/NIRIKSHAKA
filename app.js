@@ -40,7 +40,6 @@ app.post('/predict', upload.single('image'), async (req, res) => {
     }
 });
 
-
 // Serve static files (HTML, CSS, JS)
 app.use(express.static('public'));
 
